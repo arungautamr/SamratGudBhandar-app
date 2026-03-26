@@ -1,4 +1,4 @@
-# Samrath Gud Bhandar - E-Commerce Platform
+# Samrat Gur Bhandar - E-Commerce Platform
 
 A production-level React e-commerce application for authentic Indian jaggery sales using CRA structure with Recoil state management.
 

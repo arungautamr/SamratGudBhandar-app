@@ -16,7 +16,7 @@ export const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-image">
-        <img src="/hero-jaggery.jpg" alt="Samrath Gud Bhandar Jaggery" />
+        <img src="/hero-jaggery.jpg" alt="Samrat Gur Bhandar Jaggery" />
         <div className="hero-overlay" />
       </div>
 
@@ -24,7 +24,7 @@ export const Hero = () => {
         <div className="container">
           <div className="hero-text">
             <h1 className="hero-title">
-              Samrath Gud Bhandar - Pure, Organic Jaggery
+              Samrat Gur Bhandar - Pure, Organic Jaggery
             </h1>
             <p className="hero-subtitle">
               Experience the authentic taste of traditional Indian gur. Made using time-honored methods with zero additives, perfect for your family's health and wellness.

@@ -12,7 +12,7 @@ export const productsAtom = atom({
   default: [
     {
       id: 6,
-      name: 'Desi Shuddh Gud(Simple without any mixc)',
+      name: 'Desi Shuddh Gur(Simple without any mixc)',
       weight: '500g',
       price: '₹200',
       description: 'Classic jaggery nuggets made from pure sugarcane juice',
@@ -20,7 +20,7 @@ export const productsAtom = atom({
     },
     {
       id: 5,
-      name: 'Tilli (Sesame seeds ) Mix Gud',
+      name: 'Tilli (Sesame seeds ) Mix Gur',
       weight: '500g',
       price: '₹220',
       description: 'Crunchy jaggery bites coated with sesame seeds for a traditional taste',
