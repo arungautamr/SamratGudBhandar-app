@@ -182,7 +182,7 @@ Workflows are in:
 1. Go to **Settings -> Pages**
 2. Under **Build and deployment**, select **GitHub Actions**
 3. Add repository variables in **Settings -> Secrets and variables -> Actions -> Variables**:
-   - `ADMIN`
+   - `REACT_APP_ADMIN`
    - `REACT_APP_STORE_NAME`
    - `REACT_APP_STORE_EMAIL`
    - `REACT_APP_STORE_PHONE`
@@ -197,10 +197,10 @@ Workflows are in:
    - `REACT_APP_APP_VERSION`
    - `REACT_APP_APP_NAME`
 4. Add repository secrets in **Settings -> Secrets and variables -> Actions -> Secrets**:
-   - `VITE_EMAILJS_SERVICE_ID`
-   - `VITE_EMAILJS_CONTACT_TEMPLATE_ID`
-   - `VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID`
-   - `VITE_EMAILJS_PUBLIC_KEY`
+   - `REACT_APP_EMAILJS_SERVICE_ID`
+   - `REACT_APP_EMAILJS_CONTACT_TEMPLATE_ID`
+   - `REACT_APP_EMAILJS_AUTO_REPLY_TEMPLATE_ID`
+   - `REACT_APP_EMAILJS_PUBLIC_KEY`
 
 ### Deploy to Vercel
 

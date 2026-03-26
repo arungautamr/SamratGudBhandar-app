@@ -7,7 +7,7 @@ const parseNumber = (value, fallback = 0) => {
 
 export const config = {
   // Store Information
-  ADMIN_NAME: process.env.ADMIN || '',
+  ADMIN_NAME: process.env.REACT_APP_ADMIN || '',
 
   STORE_NAME: process.env.REACT_APP_STORE_NAME || '',
   STORE_EMAIL: process.env.REACT_APP_STORE_EMAIL || '',
@@ -30,10 +30,10 @@ export const config = {
 
   // emailjs
 
- SERVICE_ID : process.env.VITE_EMAILJS_SERVICE_ID || '',
- CONTACT_TEMPLATE_ID : process.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID ||'',
- AUTO_REPLY_TEMPLATE_ID : process.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID ||'',
- PUBLIC_KEY : process.env.VITE_EMAILJS_PUBLIC_KEY ||'',
+ SERVICE_ID : process.env.REACT_APP_EMAILJS_SERVICE_ID || '',
+ CONTACT_TEMPLATE_ID : process.env.REACT_APP_EMAILJS_CONTACT_TEMPLATE_ID ||'',
+ AUTO_REPLY_TEMPLATE_ID : process.env.REACT_APP_EMAILJS_AUTO_REPLY_TEMPLATE_ID ||'',
+ PUBLIC_KEY : process.env.REACT_APP_EMAILJS_PUBLIC_KEY ||'',
 
 
   // App Info
