@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../hooks/useCart';
 import { useTheme } from '../hooks/useTheme';
 import { config } from '../config/env';
 import '../styles/header.css';
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { cart } = useCart();
   const { theme, toggleTheme } = useTheme();
-
-  const cartItemsCount = cart.length;
 
   return (
     <header className="header">
@@ -47,13 +43,6 @@ export const Header = () => {
             >
               {theme === 'light' ? '🌙' : '☀️'}
             </button>
-
-            {/* <Link to="/cart" className="cart-icon">
-              <span className="cart-icon-svg">🛒</span>
-              {cartItemsCount > 0 && (
-                <span className="cart-badge">{cartItemsCount}</span>
-              )}
-            </Link> */}
 
             <button
               className="mobile-menu-toggle"

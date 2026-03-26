@@ -1,22 +1,10 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { productsAtom } from '../recoil/atoms';
-import { useCart } from '../hooks/useCart';
-import { config } from '../config/env';
 import '../styles/products.css';
 
 export const Products = () => {
   const products = useRecoilValue(productsAtom);
-  const { addToCart } = useCart();
-
-  const handleAddToCart = (product) => {
-    addToCart(product);
-    const message = `Hi! I'm interested in ${product.name} (${product.weight}) priced at ${product.price}`;
-    window.open(
-      `https://wa.me/${config.STORE_WHATSAPP}?text=${encodeURIComponent(message)}`,
-      '_blank'
-    );
-  };
 
   return (
     <section id="products" className="products-section">

@@ -33,10 +33,10 @@ export const Footer = () => {
           <div className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">📷</a>
-              <a href="#" aria-label="Twitter">𝕏</a>
-              <a href="#" aria-label="WhatsApp">💬</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">📷</a>
+              <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="Twitter">𝕏</a>
+              <a href={`https://wa.me/${config.STORE_WHATSAPP}`} target="_blank" rel="noreferrer" aria-label="WhatsApp">💬</a>
             </div>
           </div>
         </div>
