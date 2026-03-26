@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--foreground);
-  color: white;
+  color: var(--primary-foreground);
   padding: 3rem 0 1rem;
   margin-top: auto;
 }
@@ -19,8 +19,7 @@
 .footer-section h3,
 .footer-section h4 {
   margin-bottom: 1rem;
-  color: white;
-}
+  color: var(--primary-foreground);}
 
 .footer-logo {
   width: 72px;
@@ -48,7 +47,7 @@
 }
 
 .footer-section ul li a {
-  color: white;
+  color: var(--primary-foreground);
   opacity: 0.8;
   transition: var(--transition);
 }
@@ -71,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--primary-foreground);
   transition: var(--transition);
   font-weight: 600;
   font-size: 1rem;
@@ -79,7 +78,7 @@
 
 .social-links a:hover {
   background-color: var(--primary);
-  color: white;
+  color: var(--primary-foreground);
 }
 
 .footer-bottom {
@@ -101,7 +100,7 @@
 }
 
 .footer-links a {
-  color: white;
+  color: var(--primary-foreground);
   opacity: 0.8;
   transition: var(--transition);
 }
