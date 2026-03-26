@@ -1,0 +1,221 @@
+:root {
+  --background: oklch(0.98 0.01 70);
+  --foreground: oklch(0.2 0.01 70);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.01 70);
+  --primary: oklch(0.55 0.18 50);
+  --primary-foreground: oklch(0.98 0.01 70);
+  --secondary: oklch(0.75 0.12 60);
+  --secondary-foreground: oklch(0.2 0.01 70);
+  --muted: oklch(0.88 0.04 70);
+  --muted-foreground: oklch(0.5 0.05 70);
+  --accent: oklch(0.65 0.15 45);
+  --accent-foreground: oklch(0.98 0.01 70);
+  --border: oklch(0.92 0.03 70);
+  --input: oklch(0.95 0.02 70);
+  --ring: oklch(0.55 0.18 50);
+  --radius: 0.625rem;
+  --transition: all 0.3s ease;
+}
+
+.dark {
+  --background: oklch(0.15 0.01 70);
+  --foreground: oklch(0.92 0.02 70);
+  --card: oklch(0.18 0.01 70);
+  --card-foreground: oklch(0.92 0.02 70);
+  --primary: oklch(0.65 0.15 45);
+  --primary-foreground: oklch(0.15 0.01 70);
+  --secondary: oklch(0.5 0.1 50);
+  --secondary-foreground: oklch(0.92 0.02 70);
+  --muted: oklch(0.3 0.02 70);
+  --muted-foreground: oklch(0.65 0.05 70);
+  --accent: oklch(0.75 0.12 60);
+  --accent-foreground: oklch(0.15 0.01 70);
+  --border: oklch(0.3 0.02 70);
+  --input: oklch(0.25 0.02 70);
+  --ring: oklch(0.65 0.15 45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--input);
+  color: var(--foreground);
+  transition: var(--transition);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--ring);
+  box-shadow: 0 0 0 3px rgba(var(--primary), 0.1);
+}
+
+input.error, textarea.error {
+  border-color: #ef4444;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.success-message {
+  background-color: #10b981;
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.error-boundary {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-content h1 {
+  margin-bottom: 1rem;
+}
+
+.error-content p {
+  margin-bottom: 2rem;
+  color: var(--muted-foreground);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.125rem; }
+
+  .btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
