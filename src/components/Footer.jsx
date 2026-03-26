@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 {config.STORE_NAME}. All rights reserved.</p>
+          <p>&copy; 2026 {config.STORE_NAME}. All rights reserved.</p>
           <div className="footer-links">
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
